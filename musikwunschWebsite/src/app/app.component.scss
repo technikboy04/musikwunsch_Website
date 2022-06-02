@@ -1,14 +1,19 @@
 mat-grid-tile {
     background: lightblue;
  }
- .footer {
-    position: relative;
-    bottom: 0;
-    left:0;
-    right:0;
+
+
+
+.body-start{
+background-color: red;
+height: fit-content;
+display:block;
+overflow:auto;
+height: 100%;
 }
 
-.body-gast {
-    position: absolute;
+.footer {
+
+  height: 200px;
 
 }
