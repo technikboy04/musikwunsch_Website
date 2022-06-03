@@ -1,76 +1,73 @@
 
-<div class="linker-bereich">
-  <h1>Musikwünsche:</h1>
+  <div class="linker-bereich">
+    <h1>Musikwünsche:</h1>
 
-  <div class="kachel" *ngFor="let card of cards">
-    <mat-card class="music-card">
-      <mat-card-header>
-        <mat-card-title>{{ card.title }}</mat-card-title>
-        <mat-card-subtitle>{{ card.singer }}</mat-card-subtitle>
-      </mat-card-header>
-      <img mat-card-image src="{{ card.img }}" alt="Photo of a Shiba Inu" />
-      <mat-card-content>
-        <div class="vote-counts">
-          <h2>Votes: {{ card.votes }}</h2>
-          <h2>Uhrzeit: Testuhrzeit</h2>
-
-        </div>
-        <div class="done-button">
-          <button mat-mini-fab color="primary" aria-label="Example icon button with a menu icon">
-            <mat-icon>done</mat-icon>
-          </button>
-        </div>
-        <div class="delete-button">
-        <button mat-mini-fab color="primary" aria-label="Example icon button with a menu icon">
-          <mat-icon>delete</mat-icon>
-        </button>
-      </div>
-      </mat-card-content>
-    </mat-card>
+    <div class="kachel" *ngFor="let card of cards">
+      <mat-card class="music-card">
+        <mat-card-header>
+          <mat-card-title>{{ card.title }}</mat-card-title>
+          <mat-card-subtitle>{{ card.singer }}</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="{{ card.img }}" alt="Photo of a Shiba Inu" />
+        <mat-card-content>
+          <div class="vote-counts">
+            <h2>Votes: {{ card.votes }}</h2>
+            <h2>Uhrzeit: Testuhrzeit</h2>
+          </div>
+          <div class="done-button">
+            <button
+              mat-mini-fab
+              color="primary"
+              aria-label="Example icon button with a menu icon"
+            >
+              <mat-icon>done</mat-icon>
+            </button>
+          </div>
+          <div class="delete-button">
+            <button
+              mat-mini-fab
+              color="primary"
+              aria-label="Example icon button with a menu icon"
+            >
+              <mat-icon>delete</mat-icon>
+            </button>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </div>
   </div>
-</div>
 
   <div class="rechter-bereich">
-   <h1>Verlauf:</h1>
+    <h1>Verlauf:</h1>
     <mat-grid-list cols="1" rowHeight="150px" class="verlauf-card">
       <mat-grid-tile *ngFor="let musiklist of musikliste">
         <table class="musikliste">
-            <tr >
-              <th>
-              Title:
-            </th>
+          <tr>
+            <th>Title:</th>
             <th>
-              {{musiklist.title}}
+              {{ musiklist.title }}
             </th>
-            </tr>
-            <tr>
-              <th>
-              Interpret:
-            </th>
+          </tr>
+          <tr>
+            <th>Interpret:</th>
             <th>
-              {{musiklist.interpret}}
+              {{ musiklist.interpret }}
             </th>
-            </tr>
-            <tr>
-              <th>
-              Votes:
-            </th>
+          </tr>
+          <tr>
+            <th>Votes:</th>
             <th>
-              {{musiklist.votes}}
+              {{ musiklist.votes }}
             </th>
-            </tr>
-            <tr>
-              <th>
-              Gespielt um:
-            </th>
+          </tr>
+          <tr>
+            <th>Gespielt um:</th>
             <th>
-              {{musiklist.timestamp}}
+              {{ musiklist.timestamp }}
             </th>
-            </tr>
-
+          </tr>
         </table>
       </mat-grid-tile>
-
     </mat-grid-list>
   </div>
 

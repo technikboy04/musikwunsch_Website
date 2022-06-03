@@ -2,10 +2,11 @@
   float: left;
   width: 70%;
   height: fit-content;
-  position: absolute;
+  position: relative;
   display:block;
 overflow:auto;
-height: 100%;
+
+
 }
 
 .rechter-bereich {
@@ -62,6 +63,7 @@ z-index: 2;
 width: 50%;
 position: absolute;
 }
+
 .delete-button{
   float: right;
   margin-right: 5px;
