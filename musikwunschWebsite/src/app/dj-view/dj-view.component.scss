@@ -15,9 +15,13 @@ height: 100%;
   height: fit-content;
 }
 
+
 .music-card{
   max-width: 100%;
   border: 2px;
+}
+::-webkit-scrollbar {
+  display: none;
 }
 
 .kachel {
@@ -49,15 +53,24 @@ position: absolute;
 .mat-card-header{
 height: 80px;
 }
-.vote-button{
+.done-button{
 float: right;
 margin-right: 5px;
-margin-left: 120px;
-margin-top: 0px;
+margin-left: 100px;
+margin-top: 6px;
 z-index: 2;
 width: 50%;
 position: absolute;
 }
+.delete-button{
+  float: right;
+  margin-right: 5px;
+  margin-left: 150px;
+  margin-top: 6px;
+  z-index: 2;
+  width: 50%;
+  position: absolute;
+  }
 
 .mat-card-content{
 margin: 5px 0 0 0px;
@@ -74,3 +87,4 @@ height: 85px;
 .verlauf-card{
   background-color: palevioletred;
 }
+
