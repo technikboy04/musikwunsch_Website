@@ -14,7 +14,8 @@ export class DjViewComponent implements OnInit {
 
   ngOnInit(): void {
 
-    console.log(this.Service.getPosts());
+    console.log(this.Service.getSpotifySearchResults('Shut up and Dance'));
+    
   }
 
   
