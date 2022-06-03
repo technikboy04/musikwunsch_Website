@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../data.service';
+
+
 
 @Component({
   selector: 'app-dj-view',
@@ -7,10 +10,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DjViewComponent implements OnInit {
 
-  constructor() { }
+  constructor(private Service:DataService) { }
 
   ngOnInit(): void {
+
+    console.log(this.Service.getPosts());
   }
+
+  
   musikliste:any[] = [
     {
       title: 'Testen',
