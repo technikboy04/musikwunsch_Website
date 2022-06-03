@@ -11,6 +11,21 @@ export class DjViewComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  musikliste:any[] = [
+    {
+      title: 'Testen',
+      interpret: 'Tom',
+      votes:'12',
+      timestamp:'12:33'
+    },
+    {
+      title: 'Testen2',
+      interpret: 'Jan',
+      votes:'30',
+      timestamp:'1:33'
+    }
+  ];
+
   cards:any[] = [
     {
       title: 'Levitate',
