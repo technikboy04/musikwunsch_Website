@@ -9,7 +9,8 @@ import {Router} from '@angular/router'
 
 })
 export class AppComponent {
-  title = 'musikwunschWebsite';
+
+
 
 
 constructor(private router:Router){}

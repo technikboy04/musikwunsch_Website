@@ -1,0 +1,59 @@
+.card{
+  height: 370px;
+  background-color: white;
+  width: 49%;
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  float: left;
+  margin-right: 1%;
+  margin-top: 10px;
+
+  .headercard{
+    height: 90px;
+    padding-top: 10px;
+  }
+
+  img{
+    width: 100%;
+  }
+  p{
+    padding-top: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
+    color: rgba(0,0,0,0.8);
+    font-size:20px;
+  }
+
+
+  button{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-right: 5%;
+
+    &:hover{
+      background-color: rgba(0,0,0,0.05);
+    }
+
+  }
+}
+
+.description{
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 18px;
+  margin-top: 27px;
+  margin-left: 15px;
+}
+
+.titel{
+  padding-left: 16px;
+  padding-right: 16px;
+  color: rgba(0,0,0,0.8);
+  font-size: 25px ;
+  font-weight: bold;
+}

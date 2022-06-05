@@ -1,0 +1,15 @@
+
+<app-header></app-header>
+
+<app-search-bar></app-search-bar>
+
+<app-music-card-user *ngFor="let card of cards" [time]="card.time" [titel]="card.title" [interpret]="card.singer" [bild]="card.img" [votes]="card.votes"></app-music-card-user>
+
+
+
+<app-footer></app-footer>
+
+
+
+
+

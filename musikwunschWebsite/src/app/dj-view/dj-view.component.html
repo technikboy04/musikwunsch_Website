@@ -1,0 +1,12 @@
+<!--Shift+Alt+F Pretty Printer-->
+
+<!--Shift+Alt+F Pretty Printer  -->
+<app-header></app-header>
+
+<div class="flexrow">
+<div class="container">
+  <app-music-card *ngFor="let card of cards" [time]="card.time" [titel]="card.title" [interpret]="card.singer" [bild]="card.img" [votes]="card.votes"></app-music-card>
+</div>
+<app-sitebar-dj></app-sitebar-dj>
+</div>
+<app-footer></app-footer>

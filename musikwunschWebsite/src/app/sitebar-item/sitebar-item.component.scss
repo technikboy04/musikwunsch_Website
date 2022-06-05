@@ -1,0 +1,19 @@
+.rowcard{
+  display: flex;
+  align-items: center;
+  width: 300px;
+
+  img{
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    object-position: right;
+    margin-right: 16px;
+  }
+
+  }
+
+  .description{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 12px;
+  }

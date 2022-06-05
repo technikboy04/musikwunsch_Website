@@ -1,21 +1,15 @@
 import { Component, OnInit } from '@angular/core';
-import { DataService } from '../data.service';
-
-
 
 @Component({
-  selector: 'app-dj-view',
-  templateUrl: './dj-view.component.html',
-  styleUrls: ['./dj-view.component.scss']
+  selector: 'app-gast-view',
+  templateUrl: './gast-view.component.html',
+  styleUrls: ['./gast-view.component.scss']
 })
-export class DjViewComponent implements OnInit {
+export class GastViewComponent implements OnInit {
 
-  constructor(public servicemusic: DataService) { }
+  constructor() { }
 
   ngOnInit(): void {
-
-    this.servicemusic.getSpotifySearchResults('Shut up and Dance');
-    this.servicemusic.setSong_gespielt(24);
   }
   cards:any[] = [
     {
@@ -76,5 +70,4 @@ export class DjViewComponent implements OnInit {
     },
 
   ];
-
 }

@@ -1,26 +1,13 @@
-mat-grid-tile {
-    background: lightblue;
- }
-.wrapper{
-  background-image: url('./../assets/bg-party.jpg');
-  background-size: cover;
+.container{
+  margin-right: 48px;
+
 
 }
- .img-fit {
-  width: 50%;
-  object-fit: cover;
-  height: 200px;
-}
-
-.body-start{
-height: fit-content;
-display:block;
-overflow:scroll;
-height: 100%;
-}
-
-.footer {
-
-  height: 200px;
-
+.flexrow{
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-bottom: 50px;
 }
