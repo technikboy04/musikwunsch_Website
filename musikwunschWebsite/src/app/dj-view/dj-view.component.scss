@@ -1,0 +1,92 @@
+.linker-bereich {
+  float: left;
+  width: 70%;
+  height: fit-content;
+  position: relative;
+  display:block;
+overflow:auto;
+
+
+}
+
+.rechter-bereich {
+  float: right;
+  width: 30%;
+  background-color: rgb(0, 30, 255);
+  height: fit-content;
+}
+
+
+.music-card{
+  max-width: 100%;
+  border: 2px;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+.kachel {
+width: 16em;
+border: 2px;
+float:left;
+margin:5px;
+}
+.mat-card-content{
+font-size: 1.5em;
+}
+
+.mat-raised-button{
+  font-size: 1em;
+}
+
+.mat-card-image{
+height: 180px;
+}
+
+.vote-counts{
+float:left;
+margin-left: 0px;
+margin-top: 12px !important;
+z-index: 1;
+position: absolute;
+}
+
+.mat-card-header{
+height: 80px;
+}
+.done-button{
+float: right;
+margin-right: 5px;
+margin-left: 100px;
+margin-top: 6px;
+z-index: 2;
+width: 50%;
+position: absolute;
+}
+
+.delete-button{
+  float: right;
+  margin-right: 5px;
+  margin-left: 150px;
+  margin-top: 6px;
+  z-index: 2;
+  width: 50%;
+  position: absolute;
+  }
+
+.mat-card-content{
+margin: 5px 0 0 0px;
+width:100%;
+height: 85px;
+}
+.musikliste{
+  width: 100em;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: 1.3em;
+}
+
+.verlauf-card{
+  background-color: palevioletred;
+}
+

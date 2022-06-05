@@ -1,0 +1,166 @@
+{
+    "tracks": {
+      "href": "https://api.spotify.com/v1/search?query=shut+up+and&type=track&market=DE&locale=de-DE%2Cde%3Bq%3D0.9%2Cen-US%3Bq%3D0.8%2Cen%3Bq%3D0.7&offset=0&limit=2",
+      "items": [
+        {
+          "album": {
+            "album_type": "album",
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/6DIS6PRrLS3wbnZsf7vYic"
+                },
+                "href": "https://api.spotify.com/v1/artists/6DIS6PRrLS3wbnZsf7vYic",
+                "id": "6DIS6PRrLS3wbnZsf7vYic",
+                "name": "WALK THE MOON",
+                "type": "artist",
+                "uri": "spotify:artist:6DIS6PRrLS3wbnZsf7vYic"
+              }
+            ],
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/3mNoFlD1wsoXfkljfFzExT"
+            },
+            "href": "https://api.spotify.com/v1/albums/3mNoFlD1wsoXfkljfFzExT",
+            "id": "3mNoFlD1wsoXfkljfFzExT",
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b27343294cfa2688055c9d821bf3",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e0243294cfa2688055c9d821bf3",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d0000485143294cfa2688055c9d821bf3",
+                "width": 64
+              }
+            ],
+            "name": "TALKING IS HARD",
+            "release_date": "2014-12-02",
+            "release_date_precision": "day",
+            "total_tracks": 12,
+            "type": "album",
+            "uri": "spotify:album:3mNoFlD1wsoXfkljfFzExT"
+          },
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/6DIS6PRrLS3wbnZsf7vYic"
+              },
+              "href": "https://api.spotify.com/v1/artists/6DIS6PRrLS3wbnZsf7vYic",
+              "id": "6DIS6PRrLS3wbnZsf7vYic",
+              "name": "WALK THE MOON",
+              "type": "artist",
+              "uri": "spotify:artist:6DIS6PRrLS3wbnZsf7vYic"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 199080,
+          "explicit": false,
+          "external_ids": {
+            "isrc": "USRC11401949"
+          },
+          "external_urls": {
+            "spotify": "https://open.spotify.com/track/4kbj5MwxO1bq9wjT5g9HaA"
+          },
+          "href": "https://api.spotify.com/v1/tracks/4kbj5MwxO1bq9wjT5g9HaA",
+          "id": "4kbj5MwxO1bq9wjT5g9HaA",
+          "is_local": false,
+          "is_playable": true,
+          "name": "Shut Up and Dance",
+          "popularity": 80,
+          "preview_url": "https://p.scdn.co/mp3-preview/78558b79e4571208d3bf6e6a80d06e3f23511abd?cid=774b29d4f13844c495f206cafdad9c86",
+          "track_number": 3,
+          "type": "track",
+          "uri": "spotify:track:4kbj5MwxO1bq9wjT5g9HaA"
+        },
+
+        
+        {
+          "album": {
+            "album_type": "single",
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/1mjqymUKo7KbLtvfYD386t"
+                },
+                "href": "https://api.spotify.com/v1/artists/1mjqymUKo7KbLtvfYD386t",
+                "id": "1mjqymUKo7KbLtvfYD386t",
+                "name": "Anchor + Bell",
+                "type": "artist",
+                "uri": "spotify:artist:1mjqymUKo7KbLtvfYD386t"
+              }
+            ],
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/73nVNq34LtpDZmRHWV1fo0"
+            },
+            "href": "https://api.spotify.com/v1/albums/73nVNq34LtpDZmRHWV1fo0",
+            "id": "73nVNq34LtpDZmRHWV1fo0",
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b27366c879361ca8a7d0e4d15f20",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e0266c879361ca8a7d0e4d15f20",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d0000485166c879361ca8a7d0e4d15f20",
+                "width": 64
+              }
+            ],
+            "name": "Shut up and Dance",
+            "release_date": "2016-05-06",
+            "release_date_precision": "day",
+            "total_tracks": 1,
+            "type": "album",
+            "uri": "spotify:album:73nVNq34LtpDZmRHWV1fo0"
+          },
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/1mjqymUKo7KbLtvfYD386t"
+              },
+              "href": "https://api.spotify.com/v1/artists/1mjqymUKo7KbLtvfYD386t",
+              "id": "1mjqymUKo7KbLtvfYD386t",
+              "name": "Anchor + Bell",
+              "type": "artist",
+              "uri": "spotify:artist:1mjqymUKo7KbLtvfYD386t"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 176182,
+          "explicit": false,
+          "external_ids": {
+            "isrc": "TCACO1620657"
+          },
+          "external_urls": {
+            "spotify": "https://open.spotify.com/track/7K9GqO7ciCHJe2bkoZoM5i"
+          },
+          "href": "https://api.spotify.com/v1/tracks/7K9GqO7ciCHJe2bkoZoM5i",
+          "id": "7K9GqO7ciCHJe2bkoZoM5i",
+          "is_local": false,
+          "is_playable": true,
+          "name": "Shut up and Dance",
+          "popularity": 47,
+          "preview_url": "https://p.scdn.co/mp3-preview/0972b18433ff083b4d8748a7a90966577d831390?cid=774b29d4f13844c495f206cafdad9c86",
+          "track_number": 1,
+          "type": "track",
+          "uri": "spotify:track:7K9GqO7ciCHJe2bkoZoM5i"
+        }
+      ],
+      "limit": 2,
+      "next": "https://api.spotify.com/v1/search?query=shut+up+and&type=track&market=DE&locale=de-DE%2Cde%3Bq%3D0.9%2Cen-US%3Bq%3D0.8%2Cen%3Bq%3D0.7&offset=2&limit=2",
+      "offset": 0,
+      "previous": null,
+      "total": 10400
+    }
+  }

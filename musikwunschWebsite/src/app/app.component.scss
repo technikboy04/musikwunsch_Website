@@ -1,3 +1,26 @@
 mat-grid-tile {
     background: lightblue;
  }
+.wrapper{
+  background-image: url('./../assets/bg-party.jpg');
+  background-size: cover;
+
+}
+ .img-fit {
+  width: 50%;
+  object-fit: cover;
+  height: 200px;
+}
+
+.body-start{
+height: fit-content;
+display:block;
+overflow:scroll;
+height: 100%;
+}
+
+.footer {
+
+  height: 200px;
+
+}
