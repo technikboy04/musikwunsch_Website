@@ -10,31 +10,30 @@ import { DataService } from '../data.service';
 })
 export class DjViewComponent implements OnInit {
 
-  constructor(private Service:DataService) { }
+  constructor(private Service: DataService) { }
 
   ngOnInit(): void {
 
     console.log(this.Service.getSpotifySearchResults('Shut up and Dance'));
-    
+
   }
 
-  
-  musikliste:any[] = [
+  musikliste: any[] = [
     {
       title: 'Testen',
       interpret: 'Tom',
-      votes:'12',
-      timestamp:'12:33'
+      votes: '12',
+      timestamp: '12:33'
     },
     {
       title: 'Testen2',
       interpret: 'Jan',
-      votes:'30',
-      timestamp:'1:33'
+      votes: '30',
+      timestamp: '1:33'
     }
   ];
 
-  cards:any[] = [
+  cards: any[] = [
     {
       title: 'Levitate',
       singer: 'Bleed from Within',
