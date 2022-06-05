@@ -10,12 +10,12 @@ import { DataService } from '../data.service';
 })
 export class DjViewComponent implements OnInit {
 
-  constructor(private Service: DataService) { }
+  constructor(public servicemusic: DataService) { }
 
   ngOnInit(): void {
 
-    console.log(this.Service.getSpotifySearchResults('Shut up and Dance'));
-
+    this.servicemusic.getSpotifySearchResults('Shut up and Dance');
+    this.servicemusic.setSong_gespielt(24);
   }
 
   musikliste: any[] = [
@@ -33,50 +33,6 @@ export class DjViewComponent implements OnInit {
     }
   ];
 
-  cards: any[] = [
-    {
-      title: 'Levitate',
-      singer: 'Bleed from Within',
-      votes: '13',
-      img: 'https://i.scdn.co/image/ab67616d0000b27383dd0216e36aa016e20c39b7'
-    },
-    {
-      title: 'Stitches',
-      singer: 'Bullet for my Valentine',
-      votes: '11',
-      img: 'https://i.scdn.co/image/ab67616d0000b27383dd0216e36aa016e20c39b7'
-    },
-    {
-      title: 'Butter',
-      singer: 'BTS',
-      votes: '2',
-      img: 'https://i.scdn.co/image/ab67616d0000b27383dd0216e36aa016e20c39b7'
-    },
-    {
-      title: 'Peaches',
-      singer: 'Justin Bieber',
-      votes: '1',
-      img: 'https://i.scdn.co/image/ab67616d0000b27383dd0216e36aa016e20c39b7'
-    },
-    {
-      title: 'Stitches',
-      singer: 'Bullet for my Valentine',
-      votes: '11',
-      img: 'https://i.scdn.co/image/ab67616d0000b27383dd0216e36aa016e20c39b7'
-    },
-    {
-      title: 'Butter',
-      singer: 'BTS',
-      votes: '2',
-      img: 'https://i.scdn.co/image/ab67616d0000b27383dd0216e36aa016e20c39b7'
-    },
-    {
-      title: 'Peaches',
-      singer: 'Justin Bieber',
-      votes: '1',
-      img: 'https://i.scdn.co/image/ab67616d0000b27383dd0216e36aa016e20c39b7'
-    },
-
-  ];
+ 
 
 }

@@ -12,13 +12,14 @@ import {MatIconModule} from '@angular/material/icon';
 import { DjViewComponent } from './dj-view/dj-view.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
-
+import { HeaderComponent } from './header/header.component';
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
     GastBodyComponent,
-    DjViewComponent
+    DjViewComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
