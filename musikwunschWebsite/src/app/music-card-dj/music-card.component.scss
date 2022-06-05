@@ -1,0 +1,62 @@
+.card{
+  height: 460px;
+  background-color: white;
+  width: 300px;
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  float: left;
+  margin-right: 10px;
+
+
+  img{
+    width: 100%;
+  }
+  p{
+    padding-top: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
+    color: rgba(0,0,0,0.8);
+    font-size:20px;
+  }
+
+
+  button{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-right: 12px;
+
+    &:hover{
+      background-color: rgba(0,0,0,0.05);
+    }
+    &:first-child{
+      margin-right: 10px;
+    }
+    &:last-child{
+      margin-right: 62px;
+    }
+
+  }
+}
+
+.description{
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 18px;
+  margin-top: 10px;
+  line-height:1.8;
+  margin-left: 10px;
+}
+
+.titel{
+  padding-top: 15px;
+  padding-left: 16px;
+  padding-right: 16px;
+  color: rgba(0,0,0,0.8);
+  font-size: 25px ;
+  font-weight: bold;
+}

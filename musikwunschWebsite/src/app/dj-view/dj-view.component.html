@@ -1,73 +1,12 @@
+<!--Shift+Alt+F Pretty Printer-->
 
-  <div class="linker-bereich">
-    <h1>Musikwünsche:</h1>
+<!--Shift+Alt+F Pretty Printer  -->
+<app-header></app-header>
 
-    <div class="kachel" *ngFor="let card of cards">
-      <mat-card class="music-card">
-        <mat-card-header>
-          <mat-card-title>{{ card.title }}</mat-card-title>
-          <mat-card-subtitle>{{ card.singer }}</mat-card-subtitle>
-        </mat-card-header>
-        <img mat-card-image src="{{ card.img }}" alt="Photo of a Shiba Inu" />
-        <mat-card-content>
-          <div class="vote-counts">
-            <h2>Votes: {{ card.votes }}</h2>
-            <h2>Uhrzeit: Testuhrzeit</h2>
-          </div>
-          <div class="done-button">
-            <button
-              mat-mini-fab
-              color="primary"
-              aria-label="Example icon button with a menu icon"
-            >
-              <mat-icon>done</mat-icon>
-            </button>
-          </div>
-          <div class="delete-button">
-            <button
-              mat-mini-fab
-              color="primary"
-              aria-label="Example icon button with a menu icon"
-            >
-              <mat-icon>delete</mat-icon>
-            </button>
-          </div>
-        </mat-card-content>
-      </mat-card>
-    </div>
-  </div>
-
-  <div class="rechter-bereich">
-    <h1>Verlauf:</h1>
-    <mat-grid-list cols="1" rowHeight="150px" class="verlauf-card">
-      <mat-grid-tile *ngFor="let musiklist of musikliste">
-        <table class="musikliste">
-          <tr>
-            <th>Title:</th>
-            <th>
-              {{ musiklist.title }}
-            </th>
-          </tr>
-          <tr>
-            <th>Interpret:</th>
-            <th>
-              {{ musiklist.interpret }}
-            </th>
-          </tr>
-          <tr>
-            <th>Votes:</th>
-            <th>
-              {{ musiklist.votes }}
-            </th>
-          </tr>
-          <tr>
-            <th>Gespielt um:</th>
-            <th>
-              {{ musiklist.timestamp }}
-            </th>
-          </tr>
-        </table>
-      </mat-grid-tile>
-    </mat-grid-list>
-  </div>
-
+<div class="flexrow">
+<div class="container">
+  <app-music-card *ngFor="let card of cards" [time]="card.time" [titel]="card.title" [interpret]="card.singer" [bild]="card.img" [votes]="card.votes"></app-music-card>
+</div>
+<app-sitebar-dj></app-sitebar-dj>
+</div>
+<app-footer></app-footer>
