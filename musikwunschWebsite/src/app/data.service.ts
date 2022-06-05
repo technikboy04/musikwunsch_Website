@@ -18,6 +18,15 @@ export class DataService {
     });
   }
 
+  public getSong_gespielt(){
+    let endPoints="/song_gespielt"
+      this.httpClient.get(this.url+endPoints).subscribe(data => {
+      console.log(data);
+    });
+  }
+
+
+
   public getVeranstaltungByID(id: number) {
     
     let endPoints = "/veranstaltung/" + id;
@@ -26,7 +35,6 @@ export class DataService {
     });
   }
   
-
   public deleteSong(id: number) {
     let endPoints = "/veranstaltung/" + id;
     this.httpClient.delete(this.url + endPoints).subscribe(data => {
@@ -37,7 +45,7 @@ export class DataService {
   public getSpotifySearchResults(searchString: String){
     let endPoints="/spotify:" + searchString;
       this.httpClient.get(this.url+endPoints).subscribe(data => {
-      console.log(data);
+     console.log(data);
     });
   }
 

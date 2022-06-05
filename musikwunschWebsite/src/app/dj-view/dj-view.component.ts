@@ -10,7 +10,7 @@ import { DataService } from '../data.service';
 })
 export class DjViewComponent implements OnInit {
 
-  constructor(private Service:DataService) { }
+  constructor(private Service: DataService) { }
 
   ngOnInit(): void {
 
