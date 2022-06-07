@@ -10,9 +10,9 @@ export class MusicCardUserComponent implements OnInit {
   constructor() { }
   @Input() titel: string ='';
   @Input() interpret: string ='';
+  @Input() votes: number =0;
   @Input() bild: string ='';
-  @Input() votes: string ='';
-  @Input() time: string ='';
+
   ngOnInit(): void {
   }
 

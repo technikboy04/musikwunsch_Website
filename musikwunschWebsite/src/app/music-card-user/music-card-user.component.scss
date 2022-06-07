@@ -1,5 +1,5 @@
 .card{
-  height: 370px;
+  height: 360px;
   background-color: white;
   width: 49%;
   border: 1px solid rgba(0,0,0,0.1);
@@ -26,14 +26,15 @@
     font-size:20px;
   }
 
+.footercard{
+  height: 50px;
 
   button{
     position: absolute;
-    bottom: 0;
+    vertical-align: middle;
     right: 0;
     cursor: pointer;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    
     margin-right: 5%;
 
     &:hover{
@@ -41,6 +42,8 @@
     }
 
   }
+  }
+ 
 }
 
 .description{

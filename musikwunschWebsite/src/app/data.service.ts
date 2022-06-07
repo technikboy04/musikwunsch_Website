@@ -16,7 +16,7 @@ export class DataService {
     this.url = "http://atiw.jundk-hosting.de:3000";
   }
 
-  public getVeranstaltung() {
+  public getVeranstaltung(): Array<QueueListObject> {
     let endPoints = "/veranstaltung"
     this.httpClient.get<ListSongQueue>(this.url + endPoints).subscribe(data => {
 
@@ -28,12 +28,15 @@ export class DataService {
           data.response[i].timestamp,
           data.response[i].votinganzahl,
           data.response[i].song_gespielt,
-          data.response[i].url
+          data.response[i].bild_url
         );
+        
         this.listQueueList.push(newListQueueObject);
       }
      
     });
+
+    return this.listQueueList;
   }
 
   public getVeranstaltungByID(id: number) {
@@ -71,7 +74,7 @@ export class DataService {
           data.response[i].timestamp,
           data.response[i].votinganzahl,
           data.response[i].song_gespielt,
-          data.response[i].url
+          data.response[i].bild_url
         );
         this.listAlreadyPlayedSongs.push(newListAlreadyPlayedObject);
       }
@@ -88,19 +91,23 @@ export class DataService {
 
   
 
-  public getSpotifySearchResults(searchString: String) {
+  public getSpotifySearchResults(searchString: String): Array<Spotify> {
 
     let endPoints = "/spotify:" + searchString;
     this.httpClient.get<SearchResultsSpotify>(this.url + endPoints).subscribe(data => {
-      console.log(data.response[0].artists[0].name);
+      
       
 
       for (let i = 0; i < data.response.length; i++) {
         let newSpotifyobject = new Spotify(data.response[i].name, data.response[i].artists[0].name, data.response[i].album.images[0].url);
         this.listSpotifySearchBar.push(newSpotifyobject);
       }
-      console.log(this.listSpotifySearchBar);
+      
+      
+      
+      
     });
+    return this.listSpotifySearchBar;
   }
 }
 
@@ -118,21 +125,21 @@ export class Spotify {
 
 export class QueueListObject {
   song_id: number = 0;
-  song_name: String = "";
-  interpret: String = "";
-  timestamp: String = "";
+  song_name: string = "";
+  interpret: string = "";
+  timestamp: string = "";
   votinganzahl: number = 0;
   song_gespielt: number = 0;
-  url: String = "";
+  bild_url: string = "";
 
-  constructor(song_id: number, song_name: String, interpret: String, timestamp: String, votinganzahl: number, song_gespielt: number, url: String) {
+  constructor(song_id: number, song_name: string, interpret: string, timestamp: string, votinganzahl: number, song_gespielt: number, url: string) {
     this.song_id = song_id;
     this.song_name = song_name;
     this.interpret = interpret;
     this.timestamp = timestamp;
     this.votinganzahl = votinganzahl;
     this.song_gespielt = song_gespielt;
-    this.url = url;
+    this.bild_url = url;
   }
 }
 
@@ -146,12 +153,12 @@ interface ListSongQueue {
 
 interface ListSongQueueItems {
   song_id: number;
-  song_name: String;
-  interpret: String;
-  timestamp: String;
+  song_name: string;
+  interpret: string;
+  timestamp: string;
   votinganzahl: number;
   song_gespielt: number;
-  url: String;
+  bild_url: string;
 }
 
 interface item {

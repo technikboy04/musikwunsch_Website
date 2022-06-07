@@ -15,7 +15,6 @@ export class DjViewComponent implements OnInit {
   ngOnInit(): void {
 
     this.servicemusic.getSpotifySearchResults('Shut up and Dance');
-    this.servicemusic.setSong_gespielt(24);
   }
   cards:any[] = [
     {

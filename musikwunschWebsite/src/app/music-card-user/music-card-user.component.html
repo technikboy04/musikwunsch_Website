@@ -1,17 +1,18 @@
-
 <div class="card">
   <div class="headercard">
-  <span class="titel">
-    {{ titel }}
-  </span>
-  <p>{{ interpret }}</p>
-</div>
+    <span class="titel">
+      {{ titel }}
+    </span>
+    <p>{{ interpret }}</p>
+  </div>
   <img src="{{ bild }}" />
-  <span class="description">
-    Votes: {{ votes }} <br />
-  </span>
-  <div class="example-button-container">
-    <button mat-fab disabled aria-label="Example icon button with a heart icon">
-      <mat-icon>favorite</mat-icon>
-    </button>
-</div>
+  <div class="footercard">
+    <span class="description">
+      Votes: {{ votes }} <br />
+    </span>
+    <div class="example-button-container">
+      <button mat-fab disabled aria-label="Example icon button with a heart icon">
+        <mat-icon>favorite</mat-icon>
+      </button>
+    </div>
+  </div>
