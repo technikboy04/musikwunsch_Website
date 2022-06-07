@@ -16,20 +16,31 @@ export class SearchBarComponent implements OnInit {
     
   }
 
+  selectSongfromSearchBar(item: Spotify){
+    this.servicemusic.postAddSongToList(item.song_name, item.artist, item.url);
+    this.data.length = 0;
+    
+
+    
+
+  }
+
   
 
-  onKeySearch(event: any) {
+  searchbarUsedbyUser(event: any) {
     
     clearTimeout(this.timeout);
     var $this = this;
     this.timeout = setTimeout(function () {
       if (event.keyCode != 13) {
-        $this.getProductSearch(event.target.value);
+        $this.makeSpotifyApiCall(event.target.value);
       }
     }, 300);
   }
 
-  getProductSearch(name: any){
+  
+
+  makeSpotifyApiCall(name: any){
 
     const keyword = name;
     if(keyword != ""){

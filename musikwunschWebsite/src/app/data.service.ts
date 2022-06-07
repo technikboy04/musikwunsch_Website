@@ -6,6 +6,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class DataService {
+  postId: any;
   url: string;
 
   listSpotifySearchBar: Array<Spotify> = [];
@@ -15,6 +16,15 @@ export class DataService {
   constructor(private httpClient: HttpClient) {
     this.url = "http://atiw.jundk-hosting.de:3000";
   }
+
+  public postAddSongToList(song_name: string, interpret: string, bild_url: string){
+    this.httpClient.post<any>('http://atiw.jundk-hosting.de:3000/veranstaltung/addSong', { 
+      song_name: song_name, interpret: interpret, votinganzahl: 1, song_gespielt: 0, bild_url: bild_url }).subscribe(data => {
+        this.postId = data.id;
+    })
+  }
+
+
 
   public getVeranstaltung(): Array<QueueListObject> {
     let endPoints = "/veranstaltung"
@@ -113,10 +123,10 @@ export class DataService {
 
 export class Spotify {
 
-  song_name: String = "";
-  artist: String = "";
-  url: String = "";
-  constructor(song_name: String, artist: String, url: String) {
+  song_name: string = "";
+  artist: string = "";
+  url: string = "";
+  constructor(song_name: string, artist: string, url: string) {
     this.song_name = song_name;
     this.artist = artist;
     this.url = url;
@@ -164,7 +174,7 @@ interface ListSongQueueItems {
 interface item {
   album: album;
   artists: Array<Artists>;
-  name: String;
+  name: string;
 
 }
 
@@ -173,11 +183,11 @@ interface album {
 }
 
 interface Images {
-  url: String;
+  url: string;
 }
 
 interface Artists {
-  name: String;
+  name: string;
 }
 
 

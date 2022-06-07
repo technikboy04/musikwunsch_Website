@@ -1,9 +1,9 @@
 <div class="md-form active-purple active-purple-2 mb-3">
-  <input class="form-control" type="text" (input)="onKeySearch($event)" placeholder="Search products"
+  <input class="form-control" type="text" (input)="searchbarUsedbyUser($event)" placeholder="Search products"
   >
 
-  <div *ngFor="let i of data">
-    <div class ="card card-body mb-1">
+  <div *ngFor="let i of data" >
+    <div class ="card card-body mb-1" (click)="selectSongfromSearchBar(i)">
       <img src="{{ i.url }}" />
       <h4>Titel: {{i.song_name}}</h4>
       <small class="text-primary">
