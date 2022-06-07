@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
 import { Spotify } from "../data.service";
 
+
 @Component({
   selector: 'app-search-bar',
   templateUrl: './search-bar.component.html',
@@ -20,8 +21,9 @@ export class SearchBarComponent implements OnInit {
     this.servicemusic.postAddSongToList(item.song_name, item.artist, item.url);
     this.data.length = 0;
     
-
-    
+    setTimeout(() => {
+      window.location.reload();
+    }, 50); // Activate after 5 minutes.
 
   }
 
@@ -57,5 +59,8 @@ export class SearchBarComponent implements OnInit {
 
   
 }
+
+
+
 
 

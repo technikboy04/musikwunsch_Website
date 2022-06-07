@@ -11,11 +11,23 @@ export class GastViewComponent implements OnInit {
   cards: Array<QueueListObject> = [];
   timeout: any = null;
 
+  
+
 
   constructor(public servicemusic: DataService) { }
 
   ngOnInit(): void {
+    
     this.getWunschliste();
+
+    setInterval(() => {         
+      //replaced function() by ()=>
+      this.getWunschliste();
+      // just testing if it is working
+    }, 180000);
+
+
+  
   }
 
 

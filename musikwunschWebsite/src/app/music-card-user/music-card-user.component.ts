@@ -1,4 +1,5 @@
 import { Component,Input, OnInit } from '@angular/core';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-music-card-user',
@@ -14,6 +15,9 @@ export class MusicCardUserComponent implements OnInit {
   @Input() bild: string ='';
 
   ngOnInit(): void {
+    
   }
+
+  
 
 }
