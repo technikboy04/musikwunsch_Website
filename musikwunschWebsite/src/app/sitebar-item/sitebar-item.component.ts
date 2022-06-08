@@ -13,6 +13,7 @@ export class SitebarItemComponent implements OnInit {
   }
   @Input() oldtitel: string ='';
   @Input() oldinterpret: string ='';
+  @Input() oldvotes: number = 0;
   @Input() oldimg: string ='';
-  @Input() oldvotes: string ='';
+  
 }

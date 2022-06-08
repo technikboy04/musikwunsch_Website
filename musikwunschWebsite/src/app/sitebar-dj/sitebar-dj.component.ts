@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { DataService, QueueListObject } from '../data.service';
 
 @Component({
   selector: 'app-sitebar-dj',
@@ -7,64 +8,34 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class SitebarDjComponent implements OnInit {
 
-  constructor() { }
+  oldcards: Array<QueueListObject> = [];
+  timeout: any = null;
+  constructor(public servicemusic: DataService) { }
 
   ngOnInit(): void {
+
+    this.getSongsGespielt();
+
+    setInterval(() => {         
+      //replaced function() by ()=>
+      this.getSongsGespielt();
+      // just testing if it is working
+    }, 180000);
   }
 
   @Input() oldtitel: string ='';
   @Input() oldinterpret: string ='';
+  @Input() oldvotes: number = 0;
   @Input() oldimg: string ='';
-  @Input() oldvotes: string ='';
-  oldcards:any[] = [
-    {
-      title: 'Levitate',
-      singer: 'Bleed from Within',
-      votes: '13',
-      img: 'https://i.scdn.co/image/ab67616d0000b27383dd0216e36aa016e20c39b7'
-    },
-    {
-      title: 'Stitches',
-      singer: 'Bullet for my Valentine',
-      votes: '11',
-      img: 'https://i.scdn.co/image/ab67616d0000b27383dd0216e36aa016e20c39b7'
-    },
-    {
-      title: 'Butter',
-      singer: 'BTS',
-      votes: '2',
-      img: 'https://i.scdn.co/image/ab67616d0000b27383dd0216e36aa016e20c39b7'
-    },
-    {
-      title: 'Peaches',
-      singer: 'Justin Bieber',
-      votes: '1',
-      img: 'https://i.scdn.co/image/ab67616d0000b27383dd0216e36aa016e20c39b7'
-    },
-    {
-      title: 'Levitate',
-      singer: 'Bleed from Within',
-      votes: '13',
-      img: 'https://i.scdn.co/image/ab67616d0000b27383dd0216e36aa016e20c39b7'
-    },
-    {
-      title: 'Stitches',
-      singer: 'Bullet for my Valentine',
-      votes: '11',
-      img: 'https://i.scdn.co/image/ab67616d0000b27383dd0216e36aa016e20c39b7'
-    },
-    {
-      title: 'Butter',
-      singer: 'BTS',
-      votes: '2',
-      img: 'https://i.scdn.co/image/ab67616d0000b27383dd0216e36aa016e20c39b7'
-    },
-    {
-      title: 'Peaches',
-      singer: 'Justin Bieber',
-      votes: '1',
-      img: 'https://i.scdn.co/image/ab67616d0000b27383dd0216e36aa016e20c39b7'
-    },
+  
+  getSongsGespielt(){
 
-  ];
+    this.servicemusic.listAlreadyPlayedSongs.length=0;
+    this.oldcards.length = 0;
+    this.oldcards = this.servicemusic.getSong_gespielt();
+    console.log(this.oldcards);
+
+}
+
+
 }

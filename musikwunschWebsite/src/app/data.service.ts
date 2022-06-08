@@ -93,7 +93,9 @@ export class DataService {
         this.listAlreadyPlayedSongs.push(newListAlreadyPlayedObject);
       }
       console.log(this.listAlreadyPlayedSongs);
+      
     });
+    return this.listAlreadyPlayedSongs;
   }
 
   public deleteSong(id: number) {

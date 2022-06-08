@@ -39,28 +39,4 @@ export class GastViewComponent implements OnInit {
     console.log(this.cards);
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  t:any[] = [
-    {
-      title: 'Levitate',
-      singer: 'Bleed from Within',
-      votes: '13',
-      time: '12.55',
-      img: 'https://i.scdn.co/image/ab67616d0000b27383dd0216e36aa016e20c39b7'
-    }
-
-  ];
 }
