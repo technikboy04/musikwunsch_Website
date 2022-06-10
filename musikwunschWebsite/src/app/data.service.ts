@@ -70,7 +70,8 @@ export class DataService {
 
   public setSong_gespielt(id: number) {
     let endPoints = "/veranstaltung/gespielt/" + id;
-    this.httpClient.get(this.url + endPoints).subscribe(data => {
+    
+    this.httpClient.get(this.url + endPoints, {}).subscribe(data => {
       console.log(data);
     });
   }

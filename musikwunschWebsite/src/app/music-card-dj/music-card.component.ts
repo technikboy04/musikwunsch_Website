@@ -36,4 +36,17 @@ export class MusicCardComponent implements OnInit {
   }, 300);
   }
 
+
+  setSongAlsGespielt(id: number){
+    this.servicemusic.setSong_gespielt(id);
+    let currentUrl = this.router.url;
+    setTimeout(() => {
+     
+   
+    this.router.navigateByUrl('/', {skipLocationChange: true}).then(() => {
+        this.router.navigate([currentUrl]);
+    });
+  }, 300);
+  }
+
 }

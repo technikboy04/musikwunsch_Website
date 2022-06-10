@@ -5,13 +5,17 @@
     </span>
     <p>{{ interpret }}</p>
   </div>
-  <img src="{{ bild }}" />
+  <img src="{{bild}}" />
   <div class="footercard">
     <span class="description">
       Votes: {{ votes }} <br />
     </span>
     <div class="example-button-container">
-      <button mat-fab disabled aria-label="Example icon button with a heart icon">
+      <button 
+      mat-fab disabled 
+      aria-label="Example icon button with a heart icon" 
+      (click)="changeVoteFromSong(song_id)"
+      >
         <mat-icon>favorite</mat-icon>
       </button>
     </div>

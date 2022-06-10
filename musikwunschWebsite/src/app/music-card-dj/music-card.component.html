@@ -8,8 +8,7 @@
     Votes: {{ votes }} <br />
     Zeitpunkt: {{ time }}
   </span>
-  <button
-  
+  <button  
     mat-mini-fab
     color="primary"
     aria-label="Example icon button with a filter list icon"
@@ -22,6 +21,7 @@
     mat-mini-fab
     color="primary"
     aria-label="Example icon button with a filter list icon"
+    (click)="setSongAlsGespielt(song_id)"
   >
     <mat-icon>done</mat-icon>
   </button>

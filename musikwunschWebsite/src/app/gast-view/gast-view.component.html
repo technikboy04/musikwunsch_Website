@@ -3,7 +3,7 @@
 
 <app-search-bar></app-search-bar>
 
-<app-music-card-user *ngFor="let card of cards"[titel]="card.song_name" [interpret]="card.interpret" [votes]="card.votinganzahl" [bild]="card.bild_url"></app-music-card-user>
+<app-music-card-user *ngFor="let card of cards"[song_id]="card.song_id" [titel]="card.song_name" [interpret]="card.interpret" [votes]="card.votinganzahl" [bild]="card.bild_url"></app-music-card-user>
 
 <app-footer></app-footer>
 
