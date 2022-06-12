@@ -64,7 +64,6 @@ export class DataService {
   public getVoteup(id: number) {
     let endPoints = "/veranstaltung/voteup/" + id;
     this.httpClient.get(this.url + endPoints).subscribe(data => {
-      console.log(data);
     });
   }
 

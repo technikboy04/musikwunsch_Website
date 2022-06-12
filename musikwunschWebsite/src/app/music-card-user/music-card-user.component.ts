@@ -22,17 +22,14 @@ export class MusicCardUserComponent implements OnInit {
   }
 
   changeVoteFromSong(id: number){
-    console.log("test");
+    
     this.servicemusic.getVoteup(id);
 
     let currentUrl = this.router.url;
 
     setTimeout(() => {
-     
-    this.router.navigateByUrl('/', {skipLocationChange: true}).then(() => {
-        this.router.navigate([currentUrl]);
-    });
-  }, 300);
+      window.location.reload();
+    }, 500);
   }
 
   
