@@ -23,7 +23,7 @@ export class SearchBarComponent implements OnInit {
     
     setTimeout(() => {
       window.location.reload();
-    }, 500); // Activate after 5 minutes.
+    }, 700); // Activate after 5 minutes.
 
   }
 

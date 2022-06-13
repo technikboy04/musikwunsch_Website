@@ -29,7 +29,7 @@ export class MusicCardUserComponent implements OnInit {
 
     setTimeout(() => {
       window.location.reload();
-    }, 500);
+    }, 700);
   }
 
   

@@ -8,8 +8,6 @@ import { Observable, Subject } from 'rxjs';
 })
 export class DataService {
 
-
-  
   postId: any;
   url: string;
 
