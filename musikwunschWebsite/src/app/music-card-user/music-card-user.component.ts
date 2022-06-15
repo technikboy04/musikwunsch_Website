@@ -8,7 +8,6 @@ import { DataService } from '../data.service';
   styleUrls: ['./music-card-user.component.scss']
 })
 export class MusicCardUserComponent implements OnInit {
-
   constructor(public servicemusic: DataService, public router: Router) { }
 
   @Input() song_id: number = 0;
@@ -21,15 +20,29 @@ export class MusicCardUserComponent implements OnInit {
     
   }
 
+ setCookie(name: string,value: string) {
+  localStorage.setItem(name, value);
+}
+
+getCookie (song_id: string): any {
+    
+ console.log(localStorage.getItem(song_id)?.toString);
+
+  return "";
+}
+
   changeVoteFromSong(id: number){
     
+    
+    this.setCookie(id.toString(), "1");
+
+
+
     this.servicemusic.getVoteup(id);
 
     let currentUrl = this.router.url;
 
-    setTimeout(() => {
-      window.location.reload();
-    }, 700);
+    
   }
 
   

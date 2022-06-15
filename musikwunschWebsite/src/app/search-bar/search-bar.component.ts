@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
 import { Spotify } from "../data.service";
 
-
 @Component({
   selector: 'app-search-bar',
   templateUrl: './search-bar.component.html',
@@ -19,6 +18,7 @@ export class SearchBarComponent implements OnInit {
 
   selectSongfromSearchBar(item: Spotify){
     this.servicemusic.postAddSongToList(item.song_name, item.artist, item.url);
+    console.log(item.song_name + " " + item.artist + " " + item.url);
     this.data.length = 0;
     
     setTimeout(() => {
@@ -26,8 +26,6 @@ export class SearchBarComponent implements OnInit {
     }, 700); // Activate after 5 minutes.
 
   }
-
-  
 
   searchbarUsedbyUser(event: any) {
     
@@ -39,9 +37,7 @@ export class SearchBarComponent implements OnInit {
       }
     }, 300);
   }
-
   
-
   makeSpotifyApiCall(name: any){
 
     const keyword = name;

@@ -9,10 +9,12 @@
   float: left;
   margin-right: 1%;
   margin-top: 10px;
+  margin-bottom: 5px;
 
   .headercard{
     height: 90px;
     padding-top: 10px;
+    padding-left: 10px;
   }
 
   img{
@@ -20,7 +22,6 @@
   }
   p{
     padding-top: 10px;
-    padding-left: 16px;
     padding-right: 16px;
     color: rgba(0,0,0,0.8);
     font-size:20px;
@@ -28,6 +29,7 @@
 
 .footercard{
   height: 50px;
+  
 
   button{
     position: absolute;
@@ -35,6 +37,7 @@
     right: 0;
     cursor: pointer;
     margin-right: 5%;
+    margin-top: 20px;
 
     &:hover{
       background-color: rgba(0,0,0,0.05);
@@ -47,13 +50,14 @@
 
 .description{
   color: rgba(0, 0, 0, 0.8);
-  font-size: 18px;
-  margin-top: 27px;
+  font-size: 24px;
+  padding-top: 27px;
   margin-left: 15px;
+  position: absolute;
+  
 }
 
 .titel{
-  padding-left: 16px;
   padding-right: 16px;
   color: rgba(0,0,0,0.8);
   font-size: 25px ;
