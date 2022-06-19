@@ -3,12 +3,17 @@
   >
 
   <div *ngFor="let i of data" >
-    <div class ="card card-body mb-1" (click)="selectSongfromSearchBar(i)">
-      <img src="{{ i.url }}" />
-      <h4>Titel: {{i.song_name}}</h4>
+    <div class ="custom-card" (click)="selectSongfromSearchBar(i)">
+      
+      <img class="bild" src="{{ i.url }}" />
+
+    <div class="text">
+      Titel: {{i.song_name}}
+      <p></p>
       <small class="text-primary">
         Interpret: {{i.artist}}
       </small>
+    </div>
     </div>
   </div>
 </div>

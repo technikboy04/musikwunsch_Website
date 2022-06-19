@@ -16,6 +16,8 @@ export class MusicCardUserComponent implements OnInit {
   @Input() interpret: string ='';
   @Input() votes: number =0;
   @Input() bild: string ='';
+  @Input() artistID: string ='';
+
 
   ngOnInit(): void {
     

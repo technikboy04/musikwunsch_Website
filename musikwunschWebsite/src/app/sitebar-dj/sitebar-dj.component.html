@@ -1,2 +1,10 @@
-<div class="margin-bottom-16"><b>Verlauf:</b></div>
+<div class="margin-bottom-16"><b>Verlauf:</b>
+<!--    <button 
+    mat-mini-fab 
+    aria-label="Example icon button with a heart icon" 
+    (click)="deletehistory()">
+    <mat-icon >delete</mat-icon>
+    </button>
+-->
+</div>
 <app-sitebar-item *ngFor="let oldcard of oldcards" [oldtitel]="oldcard.song_name" [oldinterpret]="oldcard.interpret" [oldtimestamp]="oldcard.timestamp" [oldvotes]="oldcard.votinganzahl" [oldimg]="oldcard.bild_url"></app-sitebar-item>

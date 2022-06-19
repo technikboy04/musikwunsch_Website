@@ -2,3 +2,21 @@
   border-bottom: 1px solid #ce93d8;
   box-shadow: 0 1px 0 0 #ce93d8;
 }
+.custom-card{
+  height: 290px;
+  border: 1px solid rgba(0,0,0,0.4);
+  border-radius: 10px;
+  margin: 1px;
+
+  .bild{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+  }
+  .text{
+    padding-top: 10px;
+    padding-left: 10px;
+    height: 90px;
+    font-size: 20px;
+  }
+}

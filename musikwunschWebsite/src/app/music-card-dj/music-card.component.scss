@@ -10,53 +10,66 @@
   margin-right: 10px;
 
 
+  .headercard{
+    height: 100px;
+    padding-top: 15px;
+    padding-left: 15px;
+  }
+
   img{
     width: 100%;
   }
   p{
     padding-top: 10px;
-    padding-left: 16px;
     padding-right: 16px;
     color: rgba(0,0,0,0.8);
     font-size:20px;
   }
 
 
-  button{
+
+  .footer{
+    height: 50px;
+    
+
+    button{
     position: absolute;
-    bottom: 0;
+    vertical-align: middle;
     right: 0;
     cursor: pointer;
+    margin-right: 5%;
+    bottom: 10px;
+    
+
+  
+      &:hover{
+        background-color: rgba(0,0,0,0.05);
+      }
+      &:first-child{
+        margin-right: 10px;
+      }
+      &:last-child{
+        margin-right: 62px;
+      }
+  
+    }
+  }  
+  .description{
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 18px;
     margin-top: 10px;
-    margin-bottom: 20px;
-    margin-right: 12px;
-
-    &:hover{
-      background-color: rgba(0,0,0,0.05);
-    }
-    &:first-child{
-      margin-right: 10px;
-    }
-    &:last-child{
-      margin-right: 62px;
-    }
-
+    margin-left: 5px;
+    font-weight: bold;
   }
+  
+  .titel{
+    padding-top: 15px;
+    padding-right: 16px;
+    color: rgba(0,0,0,0.8);
+    font-size: 25px ;
+    font-weight: bold;
+  }
+  
+
 }
 
-.description{
-  color: rgba(0, 0, 0, 0.7);
-  font-size: 18px;
-  margin-top: 10px;
-  line-height:1.8;
-  margin-left: 10px;
-}
-
-.titel{
-  padding-top: 15px;
-  padding-left: 16px;
-  padding-right: 16px;
-  color: rgba(0,0,0,0.8);
-  font-size: 25px ;
-  font-weight: bold;
-}

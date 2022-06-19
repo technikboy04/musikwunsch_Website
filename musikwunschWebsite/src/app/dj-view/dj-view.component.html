@@ -4,7 +4,7 @@
 
 <div class="flexrow">
 <div class="container">
-  <app-music-card *ngFor="let card of cards" [song_id]="card.song_id" [titel]="card.song_name" [interpret]="card.interpret" [votes]="card.votinganzahl" [bild]="card.bild_url" [time]="card.timestamp"></app-music-card>
+  <app-music-card *ngFor="let card of cards" [song_id]="card.song_id" [titel]="card.song_name" [interpret]="card.interpret" [votes]="card.votinganzahl" [bild]="card.bild_url" [time]="card.timestamp" [artistID]="card.artistID"></app-music-card>
 </div>
 <app-sitebar-dj></app-sitebar-dj>
 </div>

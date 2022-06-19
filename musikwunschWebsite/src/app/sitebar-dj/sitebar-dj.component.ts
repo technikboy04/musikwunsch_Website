@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { DataService, QueueListObject } from '../data.service';
 
 @Component({
@@ -10,7 +11,7 @@ export class SitebarDjComponent implements OnInit {
 
   oldcards: Array<QueueListObject> = [];
   timeout: any = null;
-  constructor(public servicemusic: DataService) { }
+  constructor(public servicemusic: DataService,public router: Router) { }
 
   ngOnInit(): void {
 
@@ -29,6 +30,7 @@ export class SitebarDjComponent implements OnInit {
   @Input() oldvotes: number = 0;
   @Input() oldimg: string ='';
   
+  
 
   
   getSongsGespielt(){
@@ -38,6 +40,17 @@ export class SitebarDjComponent implements OnInit {
     this.oldcards = this.servicemusic.getSong_gespielt();
     console.log(this.oldcards);
 
+}
+deletehistory(){
+  this.servicemusic.deleteHistory();
+  let currentUrl = this.router.url;
+  setTimeout(() => {
+   
+ 
+  this.router.navigateByUrl('/', {skipLocationChange: true}).then(() => {
+      this.router.navigate([currentUrl]);
+  });
+}, 300);
 }
 
 

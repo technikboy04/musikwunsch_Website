@@ -17,10 +17,12 @@ export class SearchBarComponent implements OnInit {
   }
 
   selectSongfromSearchBar(item: Spotify){
-    this.servicemusic.postAddSongToList(item.song_name, item.artist, item.url);
+    this.servicemusic.postAddSongToList(item.song_name, item.artist, item.url, item.artistID);
     console.log(item.song_name + " " + item.artist + " " + item.url);
     this.data.length = 0;
-    
+
+
+
     setTimeout(() => {
       window.location.reload();
     }, 700); // Activate after 5 minutes.

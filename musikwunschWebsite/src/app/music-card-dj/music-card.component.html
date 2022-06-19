@@ -1,28 +1,23 @@
 <div class="card">
-  <span class="titel">
-    {{ titel }}
-  </span>
-  <p>{{ interpret }}</p>
+  <div class="headercard">
+    <span class="titel">
+      {{ titel }}
+    </span>
+    <p>{{ interpret }}</p>
+  </div>
   <img src="{{ bild }}" />
-  <span class="description">
+  <div class="footer">
+  <div class="description">
     Votes: {{ votes }} <br />
     Zeit: {{ time }}
-  </span>
-  <button  
-    mat-mini-fab
-    color="primary"
-    aria-label="Example icon button with a filter list icon"
-    (click)="deleteSongFromList(song_id)"
-  >
-    <mat-icon >delete</mat-icon>
+  </div>
+  <button mat-mini-fab color="primary" aria-label="Example icon button with a filter list icon"
+    (click)="deleteSongFromList(song_id)">
+    <mat-icon>delete</mat-icon>
   </button>
-  <button
-    
-    mat-mini-fab
-    color="primary"
-    aria-label="Example icon button with a filter list icon"
-    (click)="setSongAlsGespielt(song_id)"
-  >
+  <button mat-mini-fab color="primary" aria-label="Example icon button with a filter list icon"
+    (click)="setSongAlsGespielt(song_id)">
     <mat-icon>done</mat-icon>
   </button>
+</div>
 </div>

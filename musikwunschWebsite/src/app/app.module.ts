@@ -18,6 +18,8 @@ import { SitebarItemComponent } from './sitebar-item/sitebar-item.component';
 import { GastViewComponent } from './gast-view/gast-view.component';
 import { MusicCardUserComponent } from './music-card-user/music-card-user.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
+import { ImpressumComponent } from './impressum/impressum.component';
+import { DatenschutzerklaerungComponent } from './datenschutzerklaerung/datenschutzerklaerung.component';
 
 
 @NgModule({
@@ -32,6 +34,8 @@ import { SearchBarComponent } from './search-bar/search-bar.component';
     GastViewComponent,
     MusicCardUserComponent,
     SearchBarComponent,
+    ImpressumComponent,
+    DatenschutzerklaerungComponent,
 
   ],
   imports: [

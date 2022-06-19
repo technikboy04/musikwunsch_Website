@@ -15,6 +15,7 @@ export class MusicCardComponent implements OnInit {
   @Input() votes: number =0;
   @Input() bild: string ='';
   @Input() time: string ='';
+  @Input() artistID: string ='';
 
   constructor(public servicemusic: DataService, public router: Router) { }
 
