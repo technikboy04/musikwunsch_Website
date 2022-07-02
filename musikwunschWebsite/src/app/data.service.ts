@@ -14,7 +14,7 @@ export class DataService {
   listQueueList: Array<QueueListObject> = [];
   listAlreadyPlayedSongs: Array<QueueListObject> = [];
   constructor(private httpClient: HttpClient) {
-    this.url = "https://atiw.jundk-hosting.de/api";
+    this.url = "https://dj.jundk-hosting.de/api";
   }
 
   postAddSongToList(song_name: string, interpret: string, bild_url: string, artistID: string) {
