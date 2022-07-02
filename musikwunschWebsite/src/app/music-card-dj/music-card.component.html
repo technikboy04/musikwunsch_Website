@@ -11,13 +11,25 @@
     Votes: {{ votes }} <br />
     Zeit: {{ time }}
   </div>
+
   <button mat-mini-fab color="primary" aria-label="Example icon button with a filter list icon"
     (click)="deleteSongFromList(song_id)">
     <mat-icon>delete</mat-icon>
   </button>
+
+  
   <button mat-mini-fab color="primary" aria-label="Example icon button with a filter list icon"
     (click)="setSongAlsGespielt(song_id)">
     <mat-icon>done</mat-icon>
   </button>
+
+  <!-- Sperrbutton -->
+
+<!--   <button mat-mini-fab color="primary" aria-label="Example icon button with a filter list icon"
+  (click)="setLockSong(song_id)">
+  <mat-icon>done</mat-icon>
+</button> -->
+
+
 </div>
 </div>

@@ -64,6 +64,12 @@ export class DataService {
     });
   }
 
+  public getLockSong(id: number) {
+    let endPoints = "/veranstaltung/locksong/" + id;
+    this.httpClient.get(this.url + endPoints).subscribe(data => {
+    });
+  }
+
 
   public getVoteDown(id: number) {
     let endPoints = "/veranstaltung/votedown/" + id;
