@@ -6,6 +6,8 @@ import { DatenschutzerklaerungComponent } from './datenschutzerklaerung/datensch
 import { DjViewComponent } from './dj-view/dj-view.component';
 import { GastViewComponent } from './gast-view/gast-view.component'
 import { ImpressumComponent } from './impressum/impressum.component';
+import { LoginComponent } from './login/login.component';
+import {AuthenticationGuard} from './authentication.guard'; 
 
 const routes: Routes =[
 
@@ -15,7 +17,8 @@ const routes: Routes =[
   },
   {
     path:'dj-view',
-    component: DjViewComponent
+    component: DjViewComponent,
+    canActivate:[AuthenticationGuard]
   },
   {
     path:'datenschutzerklaerung',
@@ -24,6 +27,10 @@ const routes: Routes =[
   {
     path:'impressum',
     component: ImpressumComponent
+  },
+  {
+    path:'login',
+    component: LoginComponent
   },
   {
     path:'gast-view',

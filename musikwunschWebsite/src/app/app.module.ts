@@ -20,6 +20,9 @@ import { MusicCardUserComponent } from './music-card-user/music-card-user.compon
 import { SearchBarComponent } from './search-bar/search-bar.component';
 import { ImpressumComponent } from './impressum/impressum.component';
 import { DatenschutzerklaerungComponent } from './datenschutzerklaerung/datenschutzerklaerung.component';
+import { LoginComponent } from './login/login.component';
+import { AuthguardServiceService } from './authguard-service.service';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -36,6 +39,7 @@ import { DatenschutzerklaerungComponent } from './datenschutzerklaerung/datensch
     SearchBarComponent,
     ImpressumComponent,
     DatenschutzerklaerungComponent,
+    LoginComponent,
 
   ],
   imports: [
@@ -47,9 +51,13 @@ import { DatenschutzerklaerungComponent } from './datenschutzerklaerung/datensch
     MatCardModule,
     MatButtonModule,
     MatIconModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [
+    AuthguardServiceService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
