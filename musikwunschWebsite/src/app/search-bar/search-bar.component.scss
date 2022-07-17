@@ -7,11 +7,20 @@
   border: 1px solid rgba(0,0,0,0.4);
   border-radius: 10px;
   margin: 1px;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  
 
   .bild{
     height: 200px;
     width: 100%;
     object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
   }
   .text{
     padding-top: 10px;
